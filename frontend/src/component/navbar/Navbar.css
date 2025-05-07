@@ -1,0 +1,91 @@
+.navbar {
+  background-color: #010203;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 16px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Restored your old title style */
+.title h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: wheat;
+  font-weight: 700;
+}
+
+/* Right-aligned navigation with profile picture */
+.navigations {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Profile section aligned properly */
+.profile-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Circular profile picture */
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  transition: transform 0.2s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+/* Dropdown menu appears below the profile pic */
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 130px;
+  z-index: 100;
+}
+
+/* Dropdown link/button style */
+a {
+  text-decoration: none;
+  width: 200px;
+}
+
+
+.dropdown-menu a,
+.dropdown-menu button {
+  background: none;
+  border: none;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu button:hover {
+  background-color: #34495e;
+}

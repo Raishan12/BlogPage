@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import axios from "axios"
+import "./Signup.css"
 
 
 const Signup = () => {
@@ -82,6 +83,7 @@ const Signup = () => {
     return (
         <div className='signup container'>
             <form onSubmit={handleSubmit}>
+                <h1 style={{ textAlign: "center" }}>SignUp</h1>
                 <input type="file" name="file" id="file" onChange={handleFileChange} />
                 <input type="text" name="username" id="username" placeholder='Username' value={data.username} onChange={handleInputChange} />
                 <input type="text" name="email" id="email" placeholder='Email' value={data.email} onChange={handleInputChange} />

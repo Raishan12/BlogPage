@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from "axios"
+import "./Login.css"
 
 const Login = () => {
 
@@ -41,9 +42,9 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <h1>Login Page</h1>
+        <div className='login container'>
             <form onSubmit={handleSubmit}>
+                <h1 style={{textAlign: "center"}}>Login</h1>
                 <input type="text" name="email" id="email" placeholder='Email' onChange={handleInputChange} />
                 <input type="text" name="password" id="password" placeholder='Password' onChange={handleInputChange} />
                 <input type="submit" value="Submit" />
